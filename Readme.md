@@ -9,4 +9,4 @@ The picture can then be processed using a Hough transform to extract structured 
 The line equations are a compression of the sensor data to a low dimensional space - you can choose to use the top n lines or pick all lines over some threshold. This compressed view can then be used for further processing such as classification or clustering, etc.
 
 ## Screen shot:
-![Screen shot](http://github.com/fwaris/SentHough/Annotated_screen_shot.png)
+![Screen shot](https://github.com/fwaris/SentHough/blob/master/Annotated_screen_shot.png)
