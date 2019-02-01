@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
+		<Switch
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/serviceSwitch"
+			android:layout_margin="2px" />
+		<TextView
+			android:text="Min:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="40px"
+			android:id="@+id/lbl1"
+			android:gravity="center_vertical" 
+			 />
+		<TextView
+			android:text="0"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/txMinAmp"
+			android:layout_marginLeft="2px"
+			android:layout_marginBottom="2px"
+			android:layout_marginRight="2px"
+			android:layout_marginTop="2px"
+			android:gravity="center_vertical" />
+		<TextView
+			android:text="Max:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="40px"
+			android:id="@+id/lbl2"
+			android:foregroundGravity="center_vertical"
+			android:gravity="center_vertical" />
+		<TextView
+			android:text="0"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/txMaxAmp"
+			android:layout_marginBottom="2px"
+			android:layout_marginLeft="2px"
+			android:layout_marginRight="2px"
+			android:layout_marginTop="2px"
+			android:gravity="center_vertical" />
+		<TextView
+			android:text="m/s/s"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:id="@+id/lbl3"
+			android:gravity="center_vertical" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2">
+		<TextView
+			android:text="Sensitivity:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/lbl5" />
+		<SeekBar
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/sensitivityBar"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="2px"
+			android:minWidth="400px"
+			android:min="2"
+			android:max="20" />
+		<TextView
+			android:text="0.0"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/txSensitivity"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10px"
+			android:layout_marginTop="2px"
+			android:layout_marginBottom="2px"
+			android:layout_marginRight="2px" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2">
+		<TextView
+			android:text="Peaks:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/lbl5"
+			android:layout_marginLeft="60px" />
+		<SeekBar
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/peeksBar"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="2px"
+			android:minWidth="400px"
+			android:min="5"
+			android:max="200" />
+		<TextView
+			android:text="0.0"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/txPeaks"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10px"
+			android:layout_marginTop="2px"
+			android:layout_marginBottom="2px"
+			android:layout_marginRight="2px" />
+	</LinearLayout>
+	<ImageView
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/imgSensor"
+		android:layout_marginTop="2px" />
+	<ImageView
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/imgHough"
+		android:layout_marginTop="5px" />
+
+</LinearLayout>
